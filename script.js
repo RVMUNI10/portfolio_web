@@ -13,6 +13,10 @@ const projects = [
     url:'CS490DJ- Security In Agentic System.pdf', cta:'→ read paper ↗',
     description:'A research paper (CS 490DJ, University of Regina) on security threats in multi-agent AI systems and the design of ReflexGuard — a lightweight, no-LLM peer-consensus framework where independent evaluators vote on each agent action before it executes. Covers the threat landscape, system architecture, and evaluation on Microsoft\'s LLMail-Inject dataset.',
     tags:['Research','Agentic AI Security','Python'] },
+   { id:4, title:'More projects being added', slug:'', color:'a', status:'paper',
+    url:'', cta:'',
+    description:'',
+    tags:[''] },
 ];
 
 const education = [
