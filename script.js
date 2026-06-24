@@ -3,14 +3,14 @@
    ========================================================= */
 const projects = [
   { id:1, title:'PromptBuddy', slug:'promptbuddy', color:'g', status:'live',
-    url:'https://lnkd.in/gmZuxKty',
+    url:'https://chatgpt.com/g/g-68824b9eb7ac8191aa782cf08fbff378-promptbuddy-raj-muni',
     description:'A custom GPT that works as your personal prompt engineer. It asks a few smart questions, then builds a ready-to-run, high-quality prompt tailored to any task — for students, researchers, marketers, entrepreneurs, or anyone GPT-curious. Trained on advanced prompt-engineering strategies and plenty of my own experiments.',
     tags:['Custom GPT','Prompt Engineering','OpenAI'] },
   { id:2, title:'PromptBuddy — Chrome Extension', slug:'promptbuddy-extension', color:'b', status:'building',
     description:'Bringing PromptBuddy into the browser as a Chrome extension, so you can craft optimized prompts anywhere you work — no tab-switching required. Currently in active development.',
     tags:['Chrome Extension','JavaScript','In Progress'] },
   { id:3, title:'Security in Agentic AI Systems', slug:'agentic-security-paper', color:'a', status:'paper',
-    url:'ReflexGuard-Security-in-Agentic-Systems.pdf', cta:'→ read paper ↗',
+    url:'CS490DJ- Security In Agentic System.pdf', cta:'→ read paper ↗',
     description:'A research paper (CS 490DJ, University of Regina) on security threats in multi-agent AI systems and the design of ReflexGuard — a lightweight, no-LLM peer-consensus framework where independent evaluators vote on each agent action before it executes. Covers the threat landscape, system architecture, and evaluation on Microsoft\'s LLMail-Inject dataset.',
     tags:['Research','Agentic AI Security','Python'] },
 ];
