@@ -639,7 +639,7 @@ function printAbout(){
   print('about/', 'ok');
   print('Who I am      — CS student @ University of Regina, minor in statistics.', 'out');
   print('What I do     — Programming Analyst @ Federated Co-operatives.', 'out');
-  print('What drives me — data science, AI, and process automation.', 'out');
+  print('What drives me — Programming, AI, Statistics and Analytics.', 'out');
   print('run <span class="ok">experience</span> for my work history, or <span class="ok">skills</span> for the stack.', 'muted');
 }
 
