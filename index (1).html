@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raj Vijay Muni — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== MODE SELECT ===================== -->
+<div class="modal" id="modal">
+  <div class="modal-card">
+    <div class="modal-bar">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+      <span>raj-portfolio — choose interface</span>
+    </div>
+    <div class="modal-body">
+      <h2 class="green">$ Welcome to my portfolio</h2>
+      <p>Pick how you'd like to explore.</p>
+      <div class="modal-choices">
+        <button class="choice term" id="pickTerm">
+          <span class="k">&gt;_ Terminal mode</span>
+          <span class="d">For devs. No mouse — type commands to move around. Try <b>help</b>.</span>
+        </button>
+        <button class="choice reg" id="pickReg">
+          <span class="k">Regular mode</span>
+          <span class="d">Scroll and click. A normal, friendly website.</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== REGULAR MODE ===================== -->
+<div id="regular">
+  <nav class="navbar" id="navbar">
+    <div class="nav-in">
+      <div class="logo">$ raj_vijay_muni</div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">home</a></li>
+        <li><a href="#about" class="nav-link">about</a></li>
+        <li><a href="#experience" class="nav-link">experience</a></li>
+        <li><a href="#education" class="nav-link">education</a></li>
+        <li><a href="#projects" class="nav-link">projects</a></li>
+        <li><a href="#achievements" class="nav-link">achievements</a></li>
+        <li><a href="#contact" class="nav-link">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="home" class="section hero">
+      <h1 class="green"><span id="typeTitle"></span><span class="cursor"></span></h1>
+      <p class="sub blue">[ computer science student · programming analyst · data &amp; automation ]</p>
+      <p class="desc">CS student at the University of Regina, now a Programmer Analyst at Federated Co-operatives. Building and supporting business applications.</p>
+    </section>
+
+    <section id="about" class="section">
+      <div class="sec-head"><h2 class="sec-title green">$ about --me</h2></div>
+      <div class="timeline">
+        <div class="t-item left"><div class="card"><h3 class="green">Who I am</h3><p>A computer science student at the University of Regina with a minor in statistics, and an absolute learner — the type who keeps at a problem until it clicks.</p></div></div>
+        <div class="t-item right"><div class="card"><h3 class="blue">What I do</h3><p>Currently a Programmer Analyst at Federated Co-operatives, building and supporting business applications. Comfortable with Power Apps, Power Automate, and scripting.</p></div></div>
+        <div class="t-item left"><div class="card"><h3 class="amber">What drives me</h3><p>I'm drawn to data science,statistics, and AI — finding the repetitive task and getting the computer to handle it instead.</p></div></div>
+      </div>
+      <div class="skills">
+        <h3 class="green">Skills &amp; technologies</h3>
+        <div class="tags">
+          <span class="tag green">Power Apps</span>
+          <span class="tag blue">Power Automate</span>
+          <span class="tag amber">C++</span>
+          <span class="tag green">JavaScript</span>
+          <span class="tag blue">HTML/CSS/JavaScript</span>
+          <span class="tag amber">Python</span>
+          <span class="tag amber">AI &amp; Automation</span>
+          <span class="tag green">UI/UX Design</span>
+          <span class="tag blue">Shell Scripting</span>
+          <span class="tag amber">Documentation</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="sec-head">
+        <h2 class="sec-title green">$ work --history</h2>
+        <p class="sec-sub blue">Where I've been and what I shipped.</p>
+      </div>
+      <div class="xp-line" id="expList"></div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="sec-head">
+        <h2 class="sec-title green">$ education --certs</h2>
+        <p class="sec-sub blue">Where I studied and what I've earned.</p>
+      </div>
+      <div class="exp-list" id="eduList"></div>
+      <h3 class="sub-label amber">// certifications</h3>
+      <div class="cert-grid" id="certGrid"></div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="sec-head">
+        <h2 class="sec-title green">$ featured_projects</h2>
+        <p class="sec-sub blue">What I'm building right now.</p>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="sec-head">
+        <h2 class="sec-title green">$ achievements --awards</h2>
+        <p class="sec-sub blue">Wins, awards, and things I'm proud of.</p>
+      </div>
+      <div class="ach-list" id="achList"></div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="sec-head"><h2 class="sec-title green">$ get_in_touch()</h2></div>
+      <div class="contact">
+        <p class="blue">Let's build something together.</p>
+        <div class="clinks">
+          <a href="mailto:raj10muni@gmail.com" class="clink amber">Email</a>
+          <a href="https://github.com/rvmuni10" target="_blank" rel="noopener" class="clink green">GitHub</a>
+          <a href="https://www.linkedin.com/in/rvmuni10/" target="_blank" rel="noopener" class="clink blue">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="switch-mode" id="toTerminal">&gt;_ switch to terminal</button>
+</div>
+
+<!-- ===================== TERMINAL MODE ===================== -->
+<div id="terminal">
+  <div class="term-window">
+    <div class="term-bar">
+      <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+      <span class="title">visitor@raj-portfolio: ~</span>
+      <span class="right">session · <b id="loc">~</b></span>
+      <button class="bar-btn" id="termToRegular" title="Leave the terminal — view the normal website">regular mode</button>
+    </div>
+    <div class="term-body" id="termBody"></div>
+    <div class="hint-bar">
+      <span><b>type</b> a command + <span class="kbd">Enter</span></span>
+      <span><span class="kbd">Tab</span> autocomplete</span>
+      <span><span class="kbd">↑</span><span class="kbd">↓</span> history</span>
+      <span>try <b>help</b> · <b>experience</b> · <b>open promptbuddy</b></span>
+      <span class="dim">not a dev? hit <b>regular mode</b> ↗</span>
+    </div>
+  </div>
+  <input id="hidden-input" autocomplete="off" autocapitalize="off" spellcheck="false" />
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
