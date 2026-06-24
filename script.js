@@ -13,10 +13,10 @@ const projects = [
     url:'CS490DJ- Security In Agentic System.pdf', cta:'→ read paper ↗',
     description:'A research paper (CS 490DJ, University of Regina) on security threats in multi-agent AI systems and the design of ReflexGuard — a lightweight, no-LLM peer-consensus framework where independent evaluators vote on each agent action before it executes. Covers the threat landscape, system architecture, and evaluation on Microsoft\'s LLMail-Inject dataset.',
     tags:['Research','Agentic AI Security','Python'] },
-   { id:4, title:'More projects being added.', slug:'', color:'g', status:'building',
-    url:'', cta:'',
-    description:'',
-    tags:[''] },
+   { id:4, title:'More projects being added', slug:'more', color:'g', status:'building',
+    wide:true,
+    description:'Work is on the way — check back soon.',
+    tags:[] },
 ];
 
 const education = [
@@ -267,7 +267,7 @@ function renderProjects(){
     const cw = colorWord[p.color];
     const clickable = !!p.url;
     const el = document.createElement('div');
-    el.className = `proj ${p.color}${clickable ? '' : ' building'}`;
+    el.className = `proj ${p.color}${clickable ? '' : ' building'}${p.wide ? ' full' : ''}`;;
     el.style.animation = `rise .6s ease ${0.08*idx}s forwards`;
     el.style.opacity = '0';
     let badgeText = '● live', badgeCls = 'live';
